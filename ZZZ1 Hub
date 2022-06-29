@@ -1,0 +1,178 @@
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("made by discord.gg/rMMsP873Xv")
+
+local serv = win:Server("ZZZ Hub", "")
+
+
+--channels
+local geode = serv:Channel("Main")
+
+
+
+--geode
+geode:Toggle(
+    "Auto Clicker dont spam or it will kick you",
+    false,
+    function(bool)
+        getgenv().AutoClicker = true
+while AutoClicker do
+    wait()
+    if bool then
+        wait()
+local args = {
+    [1] = {
+        ["manual"] = {
+            ["1"] = 1
+        }
+    }
+}
+game:GetService("ReplicatedStorage").Clickerr:InvokeServer(unpack(args))
+    else
+        getgenv().AutoClicker = false
+    end
+    end
+    end
+)
+
+
+geode:Toggle(
+    "AutoHatch (fast asf) basic 250 clicks",
+    false,
+    function(bool)
+        getgenv().AutoClicker = true
+while AutoClicker do
+    wait()
+    if bool then
+        wait()
+local args = {
+    [1] = workspace.Eggs.Basic,
+    [2] = false,
+    [3] = false
+}
+game:GetService("ReplicatedStorage").Events.Client.purchaseEgg2:InvokeServer(unpack(args))
+else
+        getgenv().AutoClicker = false
+    end
+    end
+    end
+)
+
+geode:Toggle(
+    "AutoHatch tripple basic 250 clicks",
+    false,
+    function(bool)
+        getgenv().AutoClicker = true
+while AutoClicker do
+    wait()
+    if bool then
+        wait()
+local args = {
+    [1] = workspace.Eggs.Basic,
+    [2] = false,
+    [3] = false
+}
+game:GetService("ReplicatedStorage").Events.Client.purchaseEgg2:InvokeServer(unpack(args))
+else
+        getgenv().AutoClicker = false
+    end
+    end
+    end
+)
+
+
+
+geode:Toggle(
+    "AutoHatch Auto basic 250 clicks",
+    false,
+    function(bool)
+        getgenv().AutoClicker = true
+while AutoClicker do
+    wait()
+    if bool then
+        wait()
+local args = {
+    [1] = workspace.Eggs.Basic,
+    [2] = false,
+    [3] = false
+}
+game:GetService("ReplicatedStorage").Events.Client.purchaseEgg2:InvokeServer(unpack(args))
+else
+        getgenv().AutoClicker = false
+    end
+    end
+    end
+)
+
+
+local geode = serv:Channel("Teleports")
+
+geode:Toggle(
+    "Ocean World",
+    false,
+    function(bool)
+        getgenv().Autoteleport = true
+while Autoteleport do
+    wait()
+    if bool then
+        wait()
+        function teleportTO(placeCFrame)
+            local plyr = game.Players.LocalPlayer;
+            if plyr.Character then
+                plyr.Character.HumanoidRootPart.CFrame = placeCFrame; 
+            end
+        end
+        teleportTO(game:GetService("Workspace").oceanWorld.teleport.CFrame)
+else
+        getgenv().Autoteleport = false
+    end
+    end
+    end
+)
+
+geode:Toggle(
+    "Time World",
+    false,
+    function(bool)
+        getgenv().Autoteleport1 = true
+while Autoteleport1 do
+    wait()
+    if bool then
+        wait()
+        function teleportTO(placeCFrame)
+            local plyr = game.Players.LocalPlayer;
+            if plyr.Character then
+                plyr.Character.HumanoidRootPart.CFrame = placeCFrame; 
+            end
+        end
+        teleportTO(game:GetService("Workspace").timeWorld.teleport.CFrame)
+else
+        getgenv().Autoteleport1 = false
+    end
+    end
+    end
+)
+
+geode:Toggle(
+    "tech World",
+    false,
+    function(bool)
+        getgenv().Autoteleport11 = true
+while Autoteleport11 do
+    wait()
+    if bool then
+        wait()
+        function teleportTO(placeCFrame)
+            local plyr = game.Players.LocalPlayer;
+            if plyr.Character then
+                plyr.Character.HumanoidRootPart.CFrame = placeCFrame; 
+            end
+        end
+        teleportTO(game:GetService("Workspace").techWorld.Design.Text.portals.CFrame)
+else
+        getgenv().Autoteleport11 = false
+    end
+    end
+    end
+)
